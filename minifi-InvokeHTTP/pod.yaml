@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod-invokehttp
+spec:
+  containers:
+  - name: my-invokehttp
+    image: shreymavani/invokehttp-image
+    ports:
+    - containerPort: 8083
