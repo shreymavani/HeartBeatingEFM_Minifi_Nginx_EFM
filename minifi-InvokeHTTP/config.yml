@@ -53,7 +53,7 @@ Processors:
     Batch Size: '10'
     File Filter: '[^\.].*'
     Ignore Hidden Files: 'true'
-    Input Directory: /opt/minifi/minifi-1.19.1/in
+    Input Directory: /Users/smavani/INPUT_OUTPUT_FOR_TESTING/INPUT
     Keep Source File: 'false'
     Maximum File Age:
     Maximum File Size:
@@ -96,7 +96,7 @@ Processors:
     Proxy Type: http
     Put Response Body In Attribute:
     Read Timeout: 15 secs
-    Remote URL: http://<service-IP>:80/files
+    Remote URL: http://heartbeatingefm.com/files
     SSL Context Service:
     Use Chunked Encoding: 'false'
     Useragent:
