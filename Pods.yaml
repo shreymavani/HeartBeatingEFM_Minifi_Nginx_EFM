@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-service
+  name:  customer1-nginx-service
   namespace: heartbeat
   labels:
     run : efm_heartbeating_nginx
@@ -18,12 +18,12 @@ spec:
   volumes:
   - name: config-volume-nginx
     configMap:
-      name: nginx-heartbeat
+      name:  customer1-nginx-heartbeat
 ---
 apiVersion: v1
 kind: Pod
 metadata:
-  name: spark
+  name:  customer1-spark
   namespace: heartbeat
 spec:
   containers:
@@ -38,7 +38,7 @@ spec:
   volumes:
     - name: config-volume-spark
       configMap:
-        name: minifi-agent-spark
+        name:  customer1-minifi-agent-spark
   hostAliases:
   - ip: "192.168.49.2"
     hostnames:
@@ -47,7 +47,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: hive
+  name:  customer1-hive
   namespace: heartbeat
 spec:
   containers:
@@ -62,7 +62,7 @@ spec:
   volumes:
     - name: config-volume-hive
       configMap:
-        name: minifi-agent-hive
+        name:  customer1-minifi-agent-hive
   hostAliases:
   - ip: "192.168.49.2"
     hostnames:
@@ -71,7 +71,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: yarn
+  name:  customer1-yarn
   namespace: heartbeat
 spec:
   containers:
@@ -86,7 +86,7 @@ spec:
   volumes:
     - name: config-volume-yarn
       configMap:
-        name: minifi-agent-yarn
+        name:  customer1-minifi-agent-yarn
   hostAliases:
   - ip: "192.168.49.2"
     hostnames:

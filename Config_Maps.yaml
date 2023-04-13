@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: minifi-agent-yarn
+  name:  customer1-minifi-agent-yarn
   namespace: heartbeat
 data:
   bootstrap.conf: |
@@ -177,7 +177,7 @@ data:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: minifi-agent-spark
+  name: customer1-minifi-agent-spark
   namespace: heartbeat
 data:
   bootstrap.conf: |
@@ -353,7 +353,7 @@ data:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: minifi-agent-hive
+  name:  customer1-minifi-agent-hive
   namespace: heartbeat
 data:
   bootstrap.conf: |
@@ -528,7 +528,7 @@ data:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: nginx-heartbeat
+  name:  customer1-nginx-heartbeat
   namespace: heartbeat
 data:
   nginx.conf: |
