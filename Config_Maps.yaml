@@ -155,7 +155,7 @@ data:
     c2.runtime.manifest.identifier=minifi
     c2.runtime.type=minifi-java
     # Optional.  Defaults to a hardware based unique identifier
-    c2.agent.identifier=minifi_agent_yarn
+    c2.agent.identifier=customer1_minifi_agent_yarn
     # If set to false heartbeat won't contain the manifest. Defaults to true.
     #c2.full.heartbeat=false
     # Directory for storing assets downloaded via C2 update/asset command
@@ -331,7 +331,7 @@ data:
     c2.runtime.manifest.identifier=minifi
     c2.runtime.type=minifi-java
     # Optional.  Defaults to a hardware based unique identifier
-    c2.agent.identifier=minifi_agent_spark
+    c2.agent.identifier=customer1_minifi_agent_spark
     # If set to false heartbeat won't contain the manifest. Defaults to true.
     #c2.full.heartbeat=false
     # Directory for storing assets downloaded via C2 update/asset command
@@ -507,7 +507,7 @@ data:
     c2.runtime.manifest.identifier=minifi
     c2.runtime.type=minifi-java
     # Optional.  Defaults to a hardware based unique identifier
-    c2.agent.identifier=minifi_agent_hive
+    c2.agent.identifier=customer1_minifi_agent_hive
     # If set to false heartbeat won't contain the manifest. Defaults to true.
     #c2.full.heartbeat=false
     # Directory for storing assets downloaded via C2 update/asset command
